@@ -1,0 +1,117 @@
+body{
+  background-image: url(bakgrund1.jpg);
+
+  background-color: rgb(255, 255, 255);
+}
+
+.start {
+  display:flex;
+  padding: 30px; 
+  color: black; 
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  flex-direction: row;
+ }
+  
+
+  .start h1 {
+    font-size: 40px;
+
+  }
+  .start h2 {
+    font-size: 30px;
+
+  }
+.Pic{
+    flex: 33%;
+    text-align: left;
+    padding: 0 20px 20px;
+  }
+.Header{
+    flex: 33%;
+    text-align: center;
+    color:rgb(91,57,55)
+  }
+.Kontakt{
+    flex: 33%;
+    text-align: right;
+    font-weight: bolder;
+    color:rgb(91,57,55)
+  }
+
+img{
+  border-radius: 50%;
+}
+
+
+.PictureAndBio{
+  display:flex;
+  flex-wrap: wrap;
+  font-family: 'Courier New', Courier, monospace;
+  justify-content: space-evenly;
+}
+.Job{
+flex:30%;
+background-color: rgba(255, 255, 255, 0.7);
+}
+.School{
+flex:30%;
+background-color: rgba(255, 255, 255, 0.7);
+}
+.Language{
+flex:30%;
+background-color: rgb(255, 255, 255, 0.7);
+
+}
+
+.Bio{
+  flex: 100%;
+  background-color: lightgray;
+  padding: 20px;
+  max-width: 500px;
+  text-align: center;
+  justify-content: center;
+}
+
+.AvslutadText  {
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+  background-color: rgb(255, 255, 255,0.7);
+  max-width: 500px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+@media (max-width: 480px) {
+  .start {
+    flex-direction: column;
+    max-width: 100%;
+    height: auto;
+  
+  }
+  .start h1{
+    font-size: 15px;
+  }
+  .start h2{
+    font-size: 10px;
+    }
+  .start p{
+    font-size: 10px
+  }
+ 
+}
+
+@media screen and (max-width: 480px) {
+  .Pic {
+    width: 70%;
+  }
+}
+@media (max-width: 480px) {
+  .PictureAndBio {
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .AvslutadText {
+    flex-direction: column;
+  }
+}
